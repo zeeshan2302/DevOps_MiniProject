@@ -1,0 +1,179 @@
+/*External Google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main{
+    min-height: 100vh;
+    /*dark Theme*/
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414340, #232529); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+    /*background: linear-gradient(to right top, #65dfc9, #6cdbeb);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    z-index: 10;
+    border-radius: 2rem;
+    backdrop-filter: blur(0.5rem);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+.circle1, .circle2{
+    background: white;
+    height: 13rem;
+    width: 13rem;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 2;
+    /*background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2))*/
+}
+
+.circle1{
+    top: 2%;
+    left: 12%;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.circle2{
+    bottom:3%;
+    right: 12%;
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1{
+    color: #FBD786;  /* fallback for old browsers */
+    font-family: 'Corinthia', cursive;
+    font-size: 250%;
+    padding-bottom: 2%;
+
+}
+
+/* h2, h3{
+    font-family: 'Lato', sans-serif;
+} */
+
+.button01{
+    color: #f7797d;  /* fallback for old browsers */ 
+    font-family: 'Corinthia', cursive;
+    font-size: 200%;
+    width: 20%;
+    height: 10%;
+    border: none;
+    border-radius: 0.7rem;
+    backdrop-filter: blur(0.5rem);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+}
+
+.button01:hover{
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    transition-duration: 0.4s;
+    color: #bf65ff ;
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 100%;
+    padding: 0.7%;
+    width: 30%;
+    height: 10%;
+    border: none;
+    border-radius: 1rem;
+    backdrop-filter: blur(0.5rem);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+    left: 0px;
+    position: relative;
+    opacity: 40%;
+}
+
+
+#img{
+    font-size: 80%;
+    border: none;
+}
+
+label{
+    font-size: 90%;
+    color: whitesmoke;
+    font-family: 'Noto Serif', serif;
+}
+
+input:hover{
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    transition-duration: 0.4s;
+    background: #ddd6f3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p{
+    font-family: 'IM Fell English SC', serif;
+    padding-top: 3%;
+    font-size: 250%;
+    padding: 2.5% 0% 2% 0%;
+    color: black;
+}
+
+#name{
+    border-bottom: 2px solid black;
+}
+
+.displayItem{
+    float: left;
+    margin-left: 25%;
+ 
+}
+
+.displayData{
+    border-bottom: 2px solid lightpink;
+    font-size: 18px;
+    margin-left: 90px;
+}
+
+.displayDataID{
+    border-bottom: 2px solid lightpink;
+    font-size: 18px;
+    margin-left: 150px;
+}
+
+.displayDataPI{
+    border-bottom: 2px solid lightpink;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.displayDataE{
+    border-bottom: 2px solid lightpink;
+    font-size: 18px;
+    margin-left: 125px;
+    
+}
+
+.displayDataP{
+    border-bottom: 2px solid lightpink;
+    font-size: 18px;
+    align-self: center;
+}
