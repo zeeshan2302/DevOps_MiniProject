@@ -14,7 +14,7 @@ sudo apt-get install python3-boto3
 sudo python3 EmpApp.py
 
 # for connecting to MYSQL
-mysql --host [RDS endpoint] -u [username] -p 
+mysql -h [RDS endpoint] -u [username] -p 
 <enterpassword>
 
 # connect to DB
