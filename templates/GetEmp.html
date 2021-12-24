@@ -1,29 +1,47 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Get Employee Information</title>
+	<title>Get Employee Information | Bridge</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Styling inserted-->
+    <link rel="stylesheet" href="../static/c.css"/> 
+
+    <!--Icon inserted-->
+    <link rel="shortcut icon" href="../static/user.png" >
+
+    <!--Google font inserted-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
-<center>
-	<font color="black" size="5" style="font-family: avenir">
+<body>
+	<main>
+        <!--Glassmorphism -->
+        <section class="glass">
+            <div>
+                <p><span id="name">Bridge</span></p>
+            </div>
 
-		<h1 style="color: DodgerBlue">Employee Information</h1>
-
-		<body bgcolor="lightgrey">
+		<h1 style="color: rgb(14, 105, 196);">Employee Information</h1>
 
 			<form action="/fetchdata" autocomplete="on" method="POST">
 
-				<h2 style="color: grey">Enter Employee ID</h2>
+				<h2>Enter Employee ID</h2>
+				<br />
+				<input type="number" name="emp_id" autofocus min="1" max="10000" size="40"><br><br> <br /><br />
 
-		  		Employee ID:<br> <input style="height:25px;font-size:14pt;" type="number" name="emp_id" autofocus size="40"><br><br>
 
+		  		<button type="submit" class="button01" style="width:40%">Fetch Info</button><br><br> <br />
 
-		  		<button type="submit" style="background: grey; height: 45px; width: 200px; color: white; size: 5; font:oblique;">FETCH INFO</button><br><br>
-
-		  		<button type="submit" formaction="http://3.134.115.108:80/" style="background: white	; height: 45px; width: 200px; color: black; size: 5; font:oblique;" method="GET">GO TO UPDATE DATABASE PAGE</button>
+		  		<button type="submit" formaction="http://3.110.182.100:80/" style="width:40%" class="button01" method="GET">Go to Update database page</button>
 
 			</form>
-
-		</body>
-	</font>
-</center>
+		</section>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </main>
+</body>
 </html>

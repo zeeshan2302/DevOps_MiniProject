@@ -1,37 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Add Employee Information</title>
-</head>
-<center>
-	<font color="black" size="4" style="font-family: avenir">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form | Bridge</title>
 
-		<h1 style="color: DodgerBlue">Employee Database</h1>
+    <!--Styling inserted-->
+    <link rel="stylesheet" href="../static/c.css"/> 
 
-		<body bgcolor="lightgrey">
+    <!--Icon inserted-->
+    <link rel="shortcut icon" href="../static/user.png" >
 
-			<form action="/addemp" autocomplete="on" method = "POST" enctype="multipart/form-data">
+    <!--Google font inserted-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Noto+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+        <!--Glassmorphism -->
+        <section class="glass">
+          <div>
+            <!--website Name-->
+            <p><span id="name">Bridge</span></p>
+          </div>
 
-				<button type="submit" formaction="/getemp" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">GET EMPLOYEE INFORMATION</button><br><br>
-
-		  		Employee ID:<br> <input style="height:25px;font-size:14pt; color:grey;" type="number" name="emp_id" autofocus size="40"><br><br>
-
-		  		First Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="first_name" ><br><br>
-
-		  		Last Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="last_name"><br><br>
-
-		  		Primary Skills:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="pri_skill"><br><br>
-
-		  		Location:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="location"><br><br>
-
-		  		Image: <input type=file name="emp_image_file" style="height:25px;font-size:14pt;color:grey;"> <br><br>
-
-		  		<button type="submit" style="background: grey; height: 45px; width: 200px; color: white; size: 5; font:oblique;">UPDATE DATABASE</button>
-
-			</form>
-<a href="/about">About Us</a>
-		</body>
-
-	</font>
-</center>
+              <!--Registeration Form -->
+              <div class="reg_form">
+                    <h1 style="font-size: 300%;">Register</h1>
+                      <form action="/addemp" autocomplete="on" method = "POST" enctype="multipart/form-data">
+                          <label>Employee ID</label>&emsp;&emsp;&ensp;&nbsp;
+                          <input type="number" name="emp_id" min="1" max="10000" autofocus><br><br>
+                
+                          <label>First Name</label>&emsp;&emsp;&emsp;&ensp;
+                          <input type="text" name="first_name" ><br><br>
+                
+                          <label>Last Name</label>&emsp;&emsp;&emsp;&ensp;&nbsp;
+                          <input type="text" name="last_name"><br><br>
+                
+                          <label>Primary Skills</label>&emsp;&emsp;&ensp;
+                          <input type="text" name="pri_skill"><br><br>
+                
+                          <label>Email</label>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;
+                          <input type="email" name="email"><br><br><br />
+                
+                          <label>Image</label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                          <input id='img' type=file name="emp_image_file"> <br><br><br />
+                
+                          <button type="submit" class="button01">Submit</button><br /><br />
+                          <button type="submit" class="button01" formaction="/getemp">Fetch details</button><br>
+                          <br /><br />
+                      </form>
+                    </body>
+              </div>
+        </section>
+        
+        <!--Background circles-->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </main>
+  </body>
 </html>

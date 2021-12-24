@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<center>
-	<font color="DodgerBlue" size="5" style="font-family: avenir">
-		<body bgcolor="lightgrey">
-			<h1>SAVE SUCCESSFUL</h1><br>
-			<h2>Following Employee has been added to the database</h2><br>
-			<h2>{{ name }}</h2><br>
-			<title>Add Emp Output</title>
-				<form action="http://3.134.115.108:80/" autocomplete="on" method = "GET">
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registered Successfull | Bridge</title>
 
-					<button type="submit" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">GO BACK</button><br><br>
+	<!--Styling inserted-->
+    <link rel="stylesheet" href="../static/c.css"/> 
+
+	<!--Icon inserted-->
+    <link rel="shortcut icon" href="../static/user.png" >
+
+	<!--Google font inserted-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Noto+Serif&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+	<main>
+		<!--Glassmorphism -->
+        <section class="glass">
+			<div>
+                <p><span id="name">Bridge</span></p>
+            </div>
+			
+			<!--Output of registeration form-->
+			<h1 style="color:greenyellow;">Saved Successfull</h1>
+			<h2>Hello, {{ name }}</h2><br>
+			<h3>Following Employee has been added to the database.</h3><br>
+				<form action="http://3.110.182.100:80/" autocomplete="on" method = "GET">
+					<br /> <br >
+					<button type="submit" class="button01">Back</button><br><br>
 
 				</form>
-		</body>
-	</font>
-</center>
+		
+		</section>
+		<div class="circle1"></div>
+        <div class="circle2"></div>
+	</body>
+	</main>
+
+
 </head>
 <body>
 

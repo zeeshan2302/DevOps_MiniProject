@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Employee Information</title>
+	<title>Employee Information | Bridge</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Styling inserted-->
+    <link rel="stylesheet" href="../static/c.css"/> 
+
+	<!--Icon inserted-->
+    <link rel="shortcut icon" href="../static/user.png" >
+
+	<!--Google font inserted-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
-<center>
-	<font color="black" size="5" style="font-family: avenir">
-
-		<h1 style="color: DodgerBlue">Employee Information</h1>
-
-		<body bgcolor="lightgrey">
-
-			<form>
-
+	<body>
+		<main>
+			<!--Glassmorphism -->
+			<section class="glass">
 				<div>
+					<p><span id="name">Bridge</span></p>
+				</div>
+			<h1 style="color: rgb(4, 101, 199); ">Employee Information</h1>
 
-			  		Employee ID:<br> {{ id }} <br><br>
+			<!--Form to display Data-->
+			<form>
+				<div>
+					<span class="displayDataP"><img src="{{ image_url }}" width="100px" height="100px"></span></label> <br><br><br />
+				
+			  		<label class="displayItem">ID : <span class="displayDataID">{{ id }}</span></label> <br><br><br />
 
-			  		First Name:<br> {{ fname }} <br><br>
+			  		<label class="displayItem">First Name : <span class="displayData">{{ fname }}</span></label> <br><br><br />
 
-			  		Last Name:<br> {{ lname }} <br><br>
+			  		<label class="displayItem">Last Name : <span class="displayData">{{ lname }}</span></label>  <br><br><br />
 
-			  		Primary Interest:<br> {{ interest }} <br><br>
+			  		<label class="displayItem">Primary Interest : <span class="displayDataPI">{{ interest }}</span> </label><br><br><br />
 
-			  		Location:<br> {{ location }} <br><br>
-
-			  		Image URL: <br> {{ image_url }} <br><br>
-
-			  		<button type="submit" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;" formaction="http://3.134.115.108:80/getemp">RESET</button><br><br>
-
+			  		<label class="displayItem">Email : <span class="displayDataE">{{ email }}</span></label> <br><br><br />
+					
+			  		<button type="submit" class="button01" formaction="http://3.110.182.100:80/getemp">Reset</button><br><br><br />
+					  <br />
 			  	</div>
 
 			</form>
+			</section>
+			<!--Background circles-->
+			<div class="circle1"></div>
+        	<div class="circle2"></div>
+			</main>
+	</body>
 
-		</body>
-
-	</font>
-</center>
 </html>
